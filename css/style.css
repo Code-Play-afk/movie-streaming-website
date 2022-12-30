@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 80px;
+  background-color: #242017;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 99vw;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  font-family: "Montserrat", sans-serif;
+}
+.logo {
+  margin: 0 10px;
+  transition: transform 0.15s;
+}
+.logo > img {
+  width: 100px;
+  cursor: pointer;
+}
+.nav-container {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-container li {
+  list-style: none;
+}
+.nav-container > li > a {
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  color: grey;
+  transition: all 0.15s;
+}
+
+.search-container {
+  width: 21%;
+  margin-right: 35px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.searchbar {
+  height: 40px;
+  width: 300px;
+  text-align: left;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+.searchbar:focus {
+  outline: none;
+}
+.search-container > button {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.home {
+  height: 100vh;
+  padding: 70px 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/bg.jpg") no-repeat center center;
+  background-size: cover;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title-container1 {
+  margin-top: 30px;
+}
+.title-container {
+  padding: 20px;
+  text-align: center;
+}
+div > hr {
+  margin: 20px 0;
+  color: white;
+  font-size: 3px;
+  width: 60vw;
+  margin: auto;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+.para {
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 24px;
+}
+.title-container2 {
+  margin-top: 30px;
+}
+.btn-container {
+  margin: 45px 10px 0;
+}
+.btn {
+  margin: 0 20px;
+  font-family: "Roboto", sans-serif;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  border-width: 0;
+  border-radius: 354px;
+  box-shadow: 5px 5px 12px black;
+  transition: background-position 0.5s, transform 0 0.15s;
+}
+.btn a {
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.book-now {
+  color: white;
+}
+.learn-more {
+  color: #f0131e;
+}
+.btn-one {
+  background-image: linear-gradient(to right, white 50%, #f0131e 50%);
+
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+
+.btn-two {
+  background-image: linear-gradient(to right, #f0131e 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+
+section.movies {
+  background-color: black;
+  height: 1762px;
+}
+.banner > img {
+  width: 99vw;
+  opacity: 0.5;
+}
+.title3 {
+  margin: 20px 20px;
+}
+.cards-container {
+  margin: 0 20px 40px;
+  height: 360px;
+  background-color: white;
+  border-radius: 7px;
+}
+.title.movie-title {
+  margin: 40px auto 0;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+}
+.underline {
+  width: 670px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+}
+.cards-stack {
+  height: 250px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card {
+  height: 240px;
+  width: 180px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  box-shadow: 0px 0px 7px black;
+  overflow: hidden;
+}
+.card p {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  font-family: "Lato", sans-serif;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.card .btn {
+  display: block;
+  margin: 0 auto;
+  height: 30px;
+  width: 120px;
+  background-color: #f0131e;
+  transform: translateY(250px);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+.card .watch-now {
+  transition: transform 0.09s;
+}
+.watch-now a {
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+.card1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/spiderman\ nwh.jpg") no-repeat center center;
+}
+.card2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/whatif.jpg") no-repeat center center;
+}
+.card3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/loki.jpg") no-repeat center center;
+}
+.card4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/falcon\ and\ the\ winter\ soldier.jpg") no-repeat center center;
+}
+.card5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/wandavision.jpg") no-repeat center center;
+}
+.card6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/avengers1.jpg") no-repeat center center;
+}
+.card7 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/avengers2.jpg") no-repeat center center;
+}
+.card8 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/avengers3.jpg") no-repeat center center;
+}
+.card9 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/avengers4.jpg") no-repeat center center;
+}
+.card10 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/deadpool.jpg") no-repeat center center;
+}
+.card11 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/blackpanther.jpg") no-repeat center center;
+}
+.card12 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/logan.jpg") no-repeat center center;
+}
+.card13 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/antman.jpg") no-repeat center center;
+}
+.card14 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/drstrange.jpg") no-repeat center center;
+}
+
+section.reviews {
+  height: 70vh;
+  background-color: #f5f5f5;
+  margin-top: 10px;
+}
+.title4 {
+  color: black;
+  padding: 20px 40px 10px;
+}
+.half2 {
+  width: 550px;
+  transform: translateX(10px);
+}
+.half {
+  width: 300px;
+  transform: translateX(25px);
+}
+.review-container {
+  margin-top: auto;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.review {
+  background-color: #fff;
+  width: 280px;
+  height: 380px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 3px 5px 7px black;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.review img {
+  padding: 10px;
+  width: 100px;
+  border-radius: 50px;
+}
+.review h3 {
+  font-size: 22px;
+}
+.line {
+  width: 70%;
+  color: #111;
+}
+.review p {
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+.review .fa-star {
+  margin-top: 15px;
+  color: gold;
+}
+.footer {
+  height: 27vh;
+  background-color: #242017;
+  color: #fff;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+.msfooter {
+  padding: 20px 0 12px;
+  font-size: 32px;
+}
+.foot {
+  margin: auto;
+  width: 300px;
+}
+.footer p {
+  padding: 15px 0 0px;
+  font-size: 17px;
+}
+.footer-icons {
+  margin-top: 12px;
+  font-size: 32px;
+}
+.fab {
+  color: rgb(204, 199, 199);
+  padding: 0 5px;
+  cursor: pointer;
+  transition: transform 0.5s, color 0.5s;
+}
+h1,
+h2 {
+  cursor: pointer;
+}

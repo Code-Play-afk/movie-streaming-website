@@ -1,0 +1,131 @@
+/*All Animations*/
+
+/*navbar hover*/
+.nav-container > li > a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+/*Search Bar Placeholder removal*/
+.searchbar:focus + .placeholder {
+  opacity: 0;
+}
+.searchbar:valid + .placeholder {
+  opacity: 0;
+}
+
+/* Button Click And Hover*/
+.btn:hover {
+  transform: translateY(-3px);
+  background-position: 0% 0;
+}
+.btn:active {
+  transform: translateY(1px);
+  /* background-position: 100% 0; */
+}
+
+.btn-one:hover .book-now {
+  color: #f0131e;
+}
+.btn-two:hover .learn-more {
+  color: white;
+}
+
+/*Render In Animation*/
+
+@keyframes renderltr {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0.1;
+  }
+  80% {
+    transform: translateX(20px);
+    opacity: 1;
+  }
+  90% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes renderrtl {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0.1;
+  }
+  80% {
+    transform: translateX(-20px);
+    opacity: 1;
+  }
+  90% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes renderbtt {
+  0% {
+    transform: translateY(700px);
+    opacity: 0.1;
+  }
+  80% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.title {
+  animation: renderltr 2s;
+}
+.para {
+  animation: renderrtl 2s;
+}
+.btn-container > .btn {
+  animation: renderbtt 2s;
+}
+.card:hover {
+  transform: scale(1.11);
+}
+.card:hover p {
+  opacity: 1;
+}
+.card:hover .watch-now {
+  opacity: 1;
+}
+
+.card4:hover .watch-now {
+  transform: translateY(100px);
+}
+.carda:hover .watch-now {
+  transform: translateY(150px);
+}
+.cardb:hover .watch-now {
+  transform: translateY(120px);
+}
+.carda > .watch-now:active {
+  transform: translateY(155px);
+}
+.cardb > .watch-now:active {
+  transform: translateY(125px);
+}
+.card4 > .watch-now:active {
+  transform: translateY(105px);
+}
+
+.review:hover {
+  transform: scale(1.01) translateY(-5px);
+}
+
+.footer .fab:hover {
+  color: white;
+  transform: scale(1.1) translateY(-3px);
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.logo:active {
+  transform: scale(1);
+}
